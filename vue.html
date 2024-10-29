@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>Fashion Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product" data-price="50">
+            <img src="dress.jpeg" alt="Stylish Dress">
+            <h3>Stylish Dress</h3>
+            <p>$50</p>
+            <button onclick="addToCart(50)">Add to Cart</button>
+        </div>
+        <div class="product" data-price="70">
+            <img src="shoes.jpeg" alt="Elegant Shoes">
+            <h3>Elegant Shoes</h3>
+            <p>$70</p>
+            <button onclick="addToCart(70)">Add to Cart</button>
+        </div>
+        <!-- More products here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
